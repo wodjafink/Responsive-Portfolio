@@ -283,7 +283,31 @@ input[type=submit] {
   is either 980px or less.
 */
 @media screen and (max-width: 980px) {
-
+  .auth-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    /* Top Right Bottom Left */
+    margin: 0 40px 40px 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .sidebar {
+    float: left;
+    width: 100%;
+    max-width: 270px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
 }
 
 /*
@@ -291,7 +315,34 @@ input[type=submit] {
   is either 768px or less.
 */
 @media screen and (max-width: 768px) {
-
+  .auth-image {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  .main-section {
+    float: top;
+    width: 100%;
+    max-width: 728px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .sidebar {
+    float: bottom;
+    width: 100%;
+    max-width: 728px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
 }
 
 /*
@@ -299,5 +350,71 @@ input[type=submit] {
   is either 980px or less.
 */
 @media screen and (max-width: 640px) {
+  .main-section {
+    float: top;
+    width: 100%;
+    max-width: 620px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .sidebar {
+    float: bottom;
+    width: 100%;
+    max-width: 620px;
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
 
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+
+  #logo {
+    float: top;
+    width: 100%;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+
+  nav {
+    float: none !important;
+    margin-top: 0px !important;
+  }
+
+  nav a {
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-top:10px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
 }
